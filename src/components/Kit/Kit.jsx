@@ -1476,8 +1476,8 @@ function Kit() {
       >
         <div className="footer-content">
           <div className="footer-code">
-            <Code size={16} />
-            <span>Made with ❤️ and lots of ☕ for IIIT-H Freshers 2025</span>
+            {/* <Code size={16} /> */}
+            <span> {'<'} Made with ❤️ for IIIT-H Freshers 2025 {'>'}</span>
           </div>
           <div className="footer-tech">
           </div>
