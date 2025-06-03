@@ -387,11 +387,11 @@
 
 .modal-close {
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem; /* Reduced from 1.5rem 2rem */
   background: linear-gradient(135deg, #2e3848 0%, #1a2332 100%);
   border: none;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 0.9rem; /* Reduced from 1.1rem */
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -399,6 +399,10 @@
   position: relative;
   z-index: 1;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  text-align: center; /* Added to center align the text */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Added to center align content */
 }
 
 .modal-close:hover {
@@ -530,6 +534,11 @@ h4 {
   .modal-header h2 {
     font-size: 1.8rem;
   }
+  
+  .modal-close {
+    padding: 1.1rem 1.6rem; /* Slightly larger for very large screens */
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -557,11 +566,35 @@ h4 {
   .category-description {
     font-size: 0.55rem;
   }
+  
+  .modal-close {
+    padding: 0.9rem 1.4rem;
+    font-size: 0.85rem;
+  }
 }
 
 @media (max-width: 968px) {
+  .category-card {
+    height: 16vh;
+    min-height: 150px;
+    touch-action: pan-x; /* Enable horizontal panning for swipe */
+    user-select: none; /* Prevent text selection during swipe */
+  }
+  
+  .category-gradient {
+    padding: 1.3rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.1s ease-out;
+  }
+  
+  /* Add visual feedback for touch */
+  .category-card:active .category-gradient {
+    transform: scale(0.98);
+    transition: transform 0.1s ease-out;
+  }
+  
   .kit {
     padding: 1.5rem;
+    overflow-x: hidden; /* Prevent horizontal scroll during swipe */
   }
   
   .student-kit-title {
@@ -578,15 +611,6 @@ h4 {
     gap: 1.5rem;
   }
   
-  .category-card {
-    height: 16vh;
-    min-height: 150px;
-  }
-  
-  .category-gradient {
-    padding: 1.3rem;
-  }
-  
   .header {
     margin-bottom: 3rem;
   }
@@ -601,12 +625,14 @@ h4 {
   
   .modal-overlay {
     padding: 1.5rem;
+    touch-action: none; /* Prevent background scrolling when modal is open */
   }
   
   .modal-content {
     max-width: 90vw;
     max-height: 85vh;
     border-radius: 20px;
+    touch-action: auto; /* Allow normal touch interaction within modal */
   }
   
   .modal-header {
@@ -620,11 +646,13 @@ h4 {
   .modal-body {
     padding: 1.5rem 2.5rem;
     max-height: calc(85vh - 180px);
+    touch-action: auto; /* Allow scrolling in modal body */
   }
   
   .modal-close {
     padding: 1.3rem 2rem;
     font-size: 1.2rem; /* Increased from 1.05rem */
+    touch-action: manipulation; /* Optimize for touch */
   }
   
   .section-title {
@@ -659,6 +687,35 @@ h4 {
 @media (max-width: 768px) {
   .kit {
     padding: 1rem;
+    overflow-x: hidden; /* Prevent horizontal scroll during swipe */
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    touch-action: pan-y; /* Allow vertical scrolling, enable horizontal swipe detection */
+  }
+  
+  .category-card {
+    height: auto;
+    min-height: 140px;
+    touch-action: manipulation; /* Optimize for touch interactions */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  .category-gradient {
+    padding: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.15s ease-out;
+  }
+  
+  /* Enhanced touch feedback */
+  .category-card:active .category-gradient {
+    transform: scale(0.97);
+    transition: transform 0.1s ease-out;
   }
   
   .student-kit-title {
@@ -668,21 +725,6 @@ h4 {
   
   .subtitle {
     font-size: 0.6rem; /* Increased from 0.325rem */
-  }
-  
-  .categories-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
-  }
-  
-  .category-card {
-    height: auto;
-    min-height: 140px;
-  }
-  
-  .category-gradient {
-    padding: 1.2rem;
   }
   
   .category-title {
@@ -719,9 +761,32 @@ h4 {
     padding-left: 0.4rem;
     margin-left: 0.75rem;
   }
+  
+  .modal-close {
+    padding: 1.1rem 1.8rem;
+    font-size: 1.05rem;
+    touch-action: manipulation;
+  }
 }
 
 @media (max-width: 480px) {
+  .category-card {
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none; /* Disable iOS callout menu */
+  }
+  
+  .category-gradient {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out;
+  }
+  
+  /* More pronounced touch feedback for very small screens */
+  .category-card:active .category-gradient {
+    transform: scale(0.95);
+    transition: transform 0.15s ease-out;
+  }
+  
   .student-kit-title {
     font-size: 1rem; /* Increased from 0.75rem */
   }
@@ -751,6 +816,13 @@ h4 {
   .subsection p {
     font-size: 0.6rem; /* Added for consistency */
   }
+  
+  .modal-close {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.9rem;
+    touch-action: manipulation;
+    min-height: 44px; /* Ensure minimum touch target size */
+  }
 }
 
 @media (max-width: 450px) {
@@ -760,6 +832,65 @@ h4 {
   
   .student-kit-title {
     font-size: 1rem; /* Kept same as 480px breakpoint */
+  }
+  
+  .category-card {
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent; /* Remove iOS tap highlight */
+  }
+  
+  .modal-close {
+    padding: 0.8rem 1.3rem;
+    font-size: 0.8rem;
+    touch-action: manipulation;
+    min-height: 44px;
+  }
+}
+
+/* Enhanced touch interactions */
+@media (hover: none) and (pointer: coarse) {
+  /* Styles for touch devices */
+  .category-card {
+    cursor: default;
+  }
+  
+  .category-card:hover {
+    animation: none; /* Disable hover animations on touch devices */
+  }
+  
+  .category-card:hover .category-gradient {
+    background: rgba(57, 92, 54, 0.108); /* Reset hover background */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Reset hover shadow */
+  }
+  
+  /* Add touch-specific active states */
+  .category-card:active .category-gradient {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-close:active {
+    transform: translateY(1px);
+  }
+}
+
+/* Prevent text selection during touch interactions */
+@media (max-width: 968px) {
+  .category-content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .category-title, .category-description, .tech-hint {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 }
 
@@ -778,6 +909,8 @@ h4 {
     padding: 0.1rem 0.18rem;
     margin: 0.2rem auto 0.35rem auto;
     border-radius: 3px;
+    touch-action: none; /* Prevent interaction with tech hints */
+    pointer-events: none; /* Make tech hints non-interactive on touch */
   }
 }
 
@@ -787,6 +920,8 @@ h4 {
     padding: 0.08rem 0.15rem;
     margin: 0.15rem auto 0.3rem auto;
     border-radius: 2px;
+    touch-action: none;
+    pointer-events: none;
   }
 }
 
@@ -795,5 +930,7 @@ h4 {
     font-size: 0.29rem; /* Slightly increased from 0.2rem */
     padding: 0.06rem 0.12rem;
     margin: 0.1rem auto 0.25rem auto;
+    touch-action: none;
+    pointer-events: none;
   }
 }
