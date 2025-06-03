@@ -1,7 +1,12 @@
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://github.com/Manas-7854/test-studentkit'  // Replace with your actual repository name
+  base: '/test-studentkit/', // This should match your repository name
+  build: {
+    outDir: 'dist',
+  },
 })
