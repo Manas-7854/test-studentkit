@@ -755,7 +755,7 @@ h4 {
 
 @media (max-width: 450px) {
   .tech-hint {
-    display: none;
+    /* display: none; */
   }
   
   .student-kit-title {
