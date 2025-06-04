@@ -58,7 +58,7 @@
 }
 
 .student-kit-title {
-  font-size: 2rem; /* Reduced from 8em */
+  font-size: 4rem; /* Reduced from 8em */
   font-weight: 800;
   margin-bottom: 1rem;
   margin-top: 15vh;
@@ -807,16 +807,40 @@ h4 {
   }
   
   .student-kit-title {
-    font-size: 1.3rem; /* Increased from 0.875rem */
+    font-size: 1.6rem; /* Increased for better readability */
     margin-top: 5vh;
   }
   
   .subtitle {
-    font-size: 0.6rem; /* Increased from 0.325rem */
+    font-size: 0.8rem; /* Increased for better readability */
   }
   
   .category-title {
-    font-size: 1rem; /* Increased from 0.675rem */
+    font-size: 1.2rem; /* Increased for better readability */
+  }
+  
+  .category-description {
+    font-size: 0.9rem; /* Increased for better readability */
+  }
+  
+  .section-title {
+    font-size: 2rem; /* Increased for better readability */
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subsection h4 {
+    font-size: 1.1rem; /* Increased for better readability */
+    margin-bottom: 0.8rem;
+  }
+  
+  .subsection p {
+    font-size: 0.95rem; /* Increased for better readability */
+    line-height: 1.5;
+  }
+  
+  .doc-list li, .item-list li {
+    font-size: 0.85rem; /* Increased for better readability */
   }
   
   .category-description {
@@ -875,33 +899,39 @@ h4 {
   }
   
   .student-kit-title {
-    font-size: 1rem; /* Increased from 0.75rem */
+    font-size: 1.5rem; /* Increased for better readability */
   }
   
   .subtitle {
-    font-size: 0.45rem; /* Increased slightly */
+    font-size: 0.65rem; /* Increased for better readability */
   }
   
   .category-title {
-    font-size: 0.8rem; /* Added for better mobile readability */
+    font-size: 1rem; /* Increased for better readability */
   }
   
   .category-description {
-    font-size: 0.6rem; /* Added for better mobile readability */
+    font-size: 0.75rem; /* Increased for better readability */
+  }
+  
+  .section-title {
+    font-size: 1.8rem; /* Increased for better readability */
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
   
   .doc-list li, .item-list li {
     margin-left: 0.25rem;
     padding-left: 0.25rem;
-    font-size: 0.6rem; /* Increased from 0.45rem */
+    font-size: 0.75rem; /* Increased for better readability */
   }
   
   .subsection h4 {
-    font-size: 0.7rem; /* Added for consistency */
+    font-size: 0.9rem; /* Increased for better readability */
   }
   
   .subsection p {
-    font-size: 0.6rem; /* Added for consistency */
+    font-size: 0.75rem; /* Increased for better readability */
   }
   
   .modal-close {
@@ -918,7 +948,41 @@ h4 {
   }
   
   .student-kit-title {
-    font-size: 1rem; /* Kept same as 480px breakpoint */
+    font-size: 1.4rem; /* Increased for better readability */
+  }
+  
+  .subtitle {
+    font-size: 0.7rem; /* Increased for better readability */
+  }
+  
+  .category-title {
+    font-size: 1.1rem; /* Increased for better readability */
+  }
+  
+  .category-description {
+    font-size: 0.8rem; /* Increased for better readability */
+  }
+  
+  .section-title {
+    font-size: 1.6rem; /* Increased for better readability */
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subsection h4 {
+    font-size: 1rem; /* Increased for better readability */
+    margin-bottom: 0.8rem;
+  }
+  
+  .subsection p {
+    font-size: 0.9rem; /* Increased for better readability */
+    line-height: 1.5;
+  }
+  
+  .doc-list li, .item-list li {
+    margin-left: 0.25rem;
+    padding-left: 0.25rem;
+    font-size: 0.85rem; /* Increased for better readability */
   }
   
   .category-card {
@@ -931,7 +995,7 @@ h4 {
   
   .modal-close {
     padding: 0.8rem 1.3rem;
-    font-size: 0.8rem;
+    font-size: 1rem; /* Increased for better readability */
     touch-action: manipulation;
     min-height: 44px;
   }

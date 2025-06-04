@@ -6,7 +6,8 @@ import {
   Calendar,
   FlaskConical,
   Building,
-  Home
+  Home,
+  Link
 } from 'lucide-react';
 import './LifeAtIIITH.css';
 
@@ -137,7 +138,24 @@ const LifeAtIIITH = () => {
                   exit={{ opacity: 0, y: -30 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  <h3 className="content-title">{sections[activeSection].title}</h3>
+                  <h3 className="content-title">
+                    {(activeSection === 'fest' || activeSection === 'research' || activeSection === 'clubs') ? (
+                      <a 
+                        href={activeSection === 'fest' 
+                          ? "https://felicity.iiit.ac.in/"
+                          : activeSection === 'research' 
+                          ? "https://www.iiit.ac.in/research-centres/#"
+                          : "https://clubs.iiit.ac.in/"
+                        } 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        style={{ color: 'inherit', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}
+                      >
+                        {sections[activeSection].title}
+                        <Link size={20} style={{ marginLeft: '4px' }} />
+                      </a>
+                    ) : sections[activeSection].title}
+                  </h3>
                   <p className="content-description">{sections[activeSection].description}</p>
                 </motion.div>
               </AnimatePresence>
