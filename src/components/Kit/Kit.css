@@ -58,7 +58,7 @@
 }
 
 .student-kit-title {
-  font-size: 4rem; /* Reduced from 8em */
+  font-size: 2rem; /* Reduced from 8em */
   font-weight: 800;
   margin-bottom: 1rem;
   margin-top: 15vh;
@@ -333,7 +333,7 @@
 }
 
 .modal-header h2 {
-  font-size: 1.5rem; /* Reduced from 6rem */
+  font-size: 2.2rem;
   font-weight: 800;
   color: #ffffff;
   text-align: center;
@@ -358,30 +358,9 @@
   scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
 
-.modal-body::-webkit-scrollbar {
-  width: 8px;
-}
-
-.modal-body::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 10px;
-}
-
-.modal-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
-  border-radius: 10px;
-  border: 2px solid transparent;
-  background-clip: content-box;
-}
-
-.modal-body::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 100%);
-  background-clip: content-box;
-}
-
 .modal-body p {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -465,7 +444,7 @@
 }
 
 .doc-list li{
-  font-size: 0.75rem; /* Reduced from 3rem */
+  font-size: 1.2rem;
   color: #a09f9b;
   padding: 0.5rem 0;
   padding-left: 1.5rem;
@@ -474,38 +453,38 @@
 }
 
 h4 {
-  font-size: 0.75rem; /* Reduced from 3rem */
+  font-size: 1.3rem;
   color: #cbd5e1;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
 .subsection h4 {
-  font-size: 0.725rem; /* Reduced from 2.9rem */
+  font-size: 1.3rem;
   color: #f0f9ff;
   margin-bottom: 1rem;
   text-align: left;
 }
 
-.subsection p{
-  font-size: 0.75rem; /* Reduced from 3rem */
+.subsection p {
+  font-size: 1.2rem;
   color: #aeada7;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
 .item-list li {
-  font-size: 0.75rem; /* Reduced from 3rem */
+  font-size: 1.2rem;
   color: #a09f9b;
   padding: 0.5rem 0rem;
-  margin-left: 1.5rem; /* Reduced from 6rem */
+  margin-left: 1.5rem;
   position: relative;
 }
 
 .code-comment {
   color: #9ca3af;
   font-style: italic;
-  font-size: 0.75rem; /* Reduced from 3rem */
+  font-size: 1.2rem;
 }
 
 .section{
@@ -720,7 +699,7 @@ h4 {
   }
   
   .modal-header h2 {
-    font-size: 1.4rem; /* Increased from 1.1rem */
+    font-size: 2rem;
   }
   
   .modal-body {
@@ -746,18 +725,18 @@ h4 {
   }
   
   .subsection h4 {
-    font-size: 0.9rem; /* Increased from 0.6rem */
+    font-size: 1.5rem;
     margin-bottom: 0.6rem;
   }
   
   .subsection p {
-    font-size: 0.65rem; /* Increased from 0.475rem */
+    font-size: 1.4rem;
     line-height: 1.5;
     margin-bottom: 0.6rem;
   }
   
   .doc-list li, .item-list li {
-    font-size: 0.65rem; /* Increased from 0.475rem */
+    font-size: 1.4rem;
     padding: 0.5rem 0;
     padding-left: 0.8rem;
     margin-left: 0.75rem;
@@ -807,40 +786,16 @@ h4 {
   }
   
   .student-kit-title {
-    font-size: 1.6rem; /* Increased for better readability */
+    font-size: 1.3rem; /* Increased from 0.875rem */
     margin-top: 5vh;
   }
   
   .subtitle {
-    font-size: 0.8rem; /* Increased for better readability */
+    font-size: 0.6rem; /* Increased from 0.325rem */
   }
   
   .category-title {
-    font-size: 1.2rem; /* Increased for better readability */
-  }
-  
-  .category-description {
-    font-size: 0.9rem; /* Increased for better readability */
-  }
-  
-  .section-title {
-    font-size: 2rem; /* Increased for better readability */
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .subsection h4 {
-    font-size: 1.1rem; /* Increased for better readability */
-    margin-bottom: 0.8rem;
-  }
-  
-  .subsection p {
-    font-size: 0.95rem; /* Increased for better readability */
-    line-height: 1.5;
-  }
-  
-  .doc-list li, .item-list li {
-    font-size: 0.85rem; /* Increased for better readability */
+    font-size: 1rem; /* Increased from 0.675rem */
   }
   
   .category-description {
@@ -848,11 +803,23 @@ h4 {
   }
   
   .modal-header h2 {
-    font-size: 1.5rem; /* Increased from 1.1rem */
+    font-size: 1.8rem;
+  }
+  
+  .modal-body {
+    padding: 1.5rem 2.5rem;
+    max-height: calc(85vh - 180px);
+    touch-action: auto; /* Allow scrolling in modal body */
+  }
+  
+  .modal-close {
+    padding: 1.3rem 2rem;
+    font-size: 1.2rem; /* Increased from 1.05rem */
+    touch-action: manipulation; /* Optimize for touch */
   }
   
   .section-title {
-    font-size: 1.2rem; /* Increased from 0.9rem */
+    font-size: 1.1rem; /* Increased from 0.9rem */
     margin-bottom: 1.3rem;
   }
   
@@ -862,142 +829,43 @@ h4 {
   }
   
   .subsection h4 {
-    font-size: 0.9rem; /* Increased from 0.6rem */
-    margin-bottom: 0.6rem;
+    font-size: 1.4rem;
   }
   
   .subsection p {
-    font-size: 0.65rem; /* Increased from 0.475rem */
-    line-height: 1.5;
-    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
   }
-  
-  .doc-list li, .item-list li {
-    font-size: 0.65rem; /* Increased from 0.475rem */
-    padding: 0.5rem 0;
-    padding-left: 0.4rem;
-    margin-left: 0.75rem;
+
+  .code-comment {
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 480px) {
-  .category-card {
-    touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none; /* Disable iOS callout menu */
+  .modal-header h2 {
+    font-size: 1.6rem;
   }
   
-  .category-gradient {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out;
-  }
-  
-  /* More pronounced touch feedback for very small screens */
-  .category-card:active .category-gradient {
-    transform: scale(0.95);
-    transition: transform 0.15s ease-out;
-  }
-  
-  .student-kit-title {
-    font-size: 1.5rem; /* Increased for better readability */
-  }
-  
-  .subtitle {
-    font-size: 0.65rem; /* Increased for better readability */
-  }
-  
-  .category-title {
-    font-size: 1rem; /* Increased for better readability */
-  }
-  
-  .category-description {
-    font-size: 0.75rem; /* Increased for better readability */
-  }
-  
-  .section-title {
-    font-size: 1.8rem; /* Increased for better readability */
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+  .modal-body p {
+    font-size: 1.3rem;
   }
   
   .doc-list li, .item-list li {
-    margin-left: 0.25rem;
-    padding-left: 0.25rem;
-    font-size: 0.75rem; /* Increased for better readability */
+    font-size: 1.2rem;
+    padding: 0.4rem 0;
+    padding-left: 0.6rem;
   }
   
   .subsection h4 {
-    font-size: 0.9rem; /* Increased for better readability */
+    font-size: 1.3rem;
   }
   
   .subsection p {
-    font-size: 0.75rem; /* Increased for better readability */
+    font-size: 1.2rem;
   }
-  
-  .modal-close {
-    padding: 0.9rem 1.5rem;
-    font-size: 0.9rem;
-    touch-action: manipulation;
-    min-height: 44px; /* Ensure minimum touch target size */
-  }
-}
 
-@media (max-width: 450px) {
-  .tech-hint {
-    /* display: none; */
-  }
-  
-  .student-kit-title {
-    font-size: 1.4rem; /* Increased for better readability */
-  }
-  
-  .subtitle {
-    font-size: 0.7rem; /* Increased for better readability */
-  }
-  
-  .category-title {
-    font-size: 1.1rem; /* Increased for better readability */
-  }
-  
-  .category-description {
-    font-size: 0.8rem; /* Increased for better readability */
-  }
-  
-  .section-title {
-    font-size: 1.6rem; /* Increased for better readability */
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .subsection h4 {
-    font-size: 1rem; /* Increased for better readability */
-    margin-bottom: 0.8rem;
-  }
-  
-  .subsection p {
-    font-size: 0.9rem; /* Increased for better readability */
-    line-height: 1.5;
-  }
-  
-  .doc-list li, .item-list li {
-    margin-left: 0.25rem;
-    padding-left: 0.25rem;
-    font-size: 0.85rem; /* Increased for better readability */
-  }
-  
-  .category-card {
-    touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent; /* Remove iOS tap highlight */
-  }
-  
-  .modal-close {
-    padding: 0.8rem 1.3rem;
-    font-size: 1rem; /* Increased for better readability */
-    touch-action: manipulation;
-    min-height: 44px;
+  .code-comment {
+    font-size: 1.2rem;
   }
 }
 

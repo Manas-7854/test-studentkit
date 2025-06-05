@@ -89,7 +89,7 @@
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px; /* Reduced from 15px */
   color: white;
-  font-size: 0.9rem; /* Reduced from 1.1rem */
+  font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -194,9 +194,9 @@
 }
 
 .content-title {
-  font-size: 1.2rem; /* Reduced from 1.6rem */
+  font-size: 1.8rem;
   font-weight: 800;
-  margin-bottom: 1rem; /* Reduced from 1.5rem */
+  margin-bottom: 1rem;
   background: #85aec1;
   background-clip: text;
   -webkit-background-clip: text;
@@ -206,7 +206,7 @@
 }
 
 .content-description {
-  font-size: 0.75rem; /* Reduced from 0.9rem */
+  font-size: 1.3rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   font-weight: 400;
@@ -415,8 +415,8 @@
 @media (max-width: 768px) {
   .life-at-iiith {
     width: 100%;
-    padding: 1.5rem 0.8rem; /* Reduced from 2rem 0.8rem */
-    border-radius: 1.2em; /* Reduced from 1.5em */
+    padding: 1.5rem 0.8rem;
+    border-radius: 1.2em;
   }
   
   .life-container {
@@ -424,37 +424,37 @@
   }
   
   .section-title {
-    font-size: 1.2rem; /* Reduced from 1.5rem */
-    margin-bottom: 2rem; /* Reduced from 2.5rem */
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
   }
   
   .life-navbar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.6rem; /* Reduced from 0.8rem */
-    padding: 0.5rem; /* Reduced from 0.6rem */
+    gap: 0.6rem;
+    padding: 0.5rem;
   }
   
   .nav-item {
-    font-size: 0.7rem; /* Reduced from 0.8rem */
-    padding: 0.5rem 0.8rem; /* Reduced from 0.6rem 0.8rem */
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
     min-width: auto;
-    gap: 0.3rem; /* Reduced from 0.4rem */
+    gap: 0.3rem;
     justify-content: center;
   }
   
   .nav-item span {
-    font-size: 0.45rem; /* Reduced from 0.5rem */
+    font-size: 0.8rem;
   }
   
   .content-title {
-    font-size: 0.85rem; /* Reduced from 1rem */
-    margin-bottom: 0.6rem; /* Reduced from 0.8rem */
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
     letter-spacing: 0.06rem;
   }
   
   .content-description {
-    font-size: 0.55rem; /* Reduced from 0.6rem */
+    font-size: 1.1rem;
     line-height: 1.3;
   }
   
@@ -487,34 +487,40 @@
   }
   
   .section-title {
-    font-size: 1.6rem; /* Increased for better readability */
-    margin-bottom: 1.8rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .life-title {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
   
   .life-navbar {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.6rem;
+    gap: 0.5rem;
   }
   
   .nav-item {
-    font-size: 1rem; /* Increased for better readability */
-    padding: 0.5rem 0.8rem;
-    gap: 0.3rem;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.4rem;
+    gap: 0.2rem;
   }
   
   .nav-item span {
-    font-size: 0.7rem; /* Increased for better readability */
+    font-size: 0.7rem;
   }
   
   .content-title {
-    font-size: 1.2rem; /* Increased for better readability */
-    margin-bottom: 0.7rem;
-    letter-spacing: 0.06rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.04rem;
   }
   
   .content-description {
-    font-size: 0.95rem; /* Increased for better readability */
-    line-height: 1.4;
+    font-size: 0.85rem;
+    line-height: 1.3;
   }
   
   .text-content {
@@ -540,7 +546,7 @@
   
   .explore-kit-button {
     padding: 0.5rem 1rem; /* Reduced from 0.8rem 1.5rem */
-    font-size: 0.8rem; /* Increased from 0.65rem for better readability */
+    font-size: 0.65rem; /* Reduced from 1rem */
     gap: 0.4rem; /* Reduced from 0.6rem */
   }
   
@@ -552,7 +558,7 @@
 
 @media (max-width: 480px) {
   .life-at-iiith {
-    padding: 1rem 0.3rem;
+    padding: 1rem 0.3rem; /* Reduced from 1rem 0.3rem */
     border-radius: 0.8em;
   }
   
@@ -561,48 +567,41 @@
   }
   
   .section-title {
-    font-size: 1.4rem; /* Increased for better readability */
-    margin-bottom: 1.5rem;
-    line-height: 1.3;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .life-title {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
   
   .life-navbar {
     grid-template-columns: 1fr;
-    gap: 0.5rem;
-    padding: 0.4rem;
+    gap: 0.4rem; /* Reduced from 0.5rem */
+    padding: 0.3rem; /* Reduced from 0.4rem */
   }
 
-  .life-title {
-    font-size: 1.5rem; /* Increased for better readability */
-    margin-top: 3rem;
-    margin-bottom: 1.2rem;
-  }
-  
   .nav-item {
-    font-size: 0.9rem; /* Increased for better readability */
-    padding: 0.4rem 0.6rem;
-    gap: 0.3rem;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.4rem;
+    gap: 0.2rem;
   }
   
   .nav-item span {
-    font-size: 0.7rem; /* Increased for better readability */
+    font-size: 0.7rem;
   }
   
-  .content-section {
-    max-height: 2vh;
-    padding-bottom: 0px;
-    height: 0px;
-  } 
-  
   .content-title {
-    font-size: 1rem; /* Increased for better readability */
-    margin-bottom: 0.6rem;
-    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.04rem;
   }
   
   .content-description {
-    font-size: 0.85rem; /* Increased for better readability */
-    line-height: 1.4;
+    font-size: 0.85rem;
+    line-height: 1.3;
   }
   
   .text-content {
@@ -628,15 +627,15 @@
   }
   
   .explore-kit-button {
-    padding: 0.6rem 1.2rem; /* Increased for better touch target */
-    font-size: 0.9rem; /* Increased for better readability */
-    gap: 0.4rem;
-    border-radius: 25px;
+    padding: 0.4rem 0.8rem; /* Reduced from 0.6rem 1.2rem */
+    font-size: 0.55rem; /* Reduced from 0.85rem */
+    gap: 0.3rem; /* Reduced from 0.4rem */
+    border-radius: 25px; /* Reduced from 35px */
   }
   
   .explore-kit-button .button-arrow {
-    width: 14px; /* Increased for better visibility */
-    height: 14px;
+    width: 10px; /* Reduced from 14px */
+    height: 10px;
   }
 }
 
