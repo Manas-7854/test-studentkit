@@ -842,30 +842,52 @@ h4 {
 }
 
 @media (max-width: 480px) {
-  .modal-header h2 {
-    font-size: 1.6rem;
+  .modal-overlay {
+    padding: 1rem;
+  }
+
+  .modal-content {
+    max-width: 95vw;
+  }
+
+  .modal-header {
+    padding: 1rem 1.2rem 0.8rem;
   }
   
-  .modal-body p {
-    font-size: 1.3rem;
+  .modal-header h2 {
+    font-size: 1.6rem;  /* Increased from 1.2rem */
+  }
+  
+  .student-kit-title {
+    font-size: 1.8rem;  /* Increased title size */
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;  /* Slightly increased for better readability */
   }
   
   .doc-list li, .item-list li {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     padding: 0.4rem 0;
     padding-left: 0.6rem;
   }
   
   .subsection h4 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   
   .subsection p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .code-comment {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-close {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.8rem;
   }
 }
 
