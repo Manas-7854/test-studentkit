@@ -395,7 +395,7 @@ function Kit() {
                             <li> 10th Marksheet/Certificate/Date of Birth certificate</li>
                             <li> 11th and 12th Marksheet/Certificates</li>
                             <li> Transfer Certificate/Migration Certificate</li>
-                            <li> JEE (Main) scorecard/NTSE/KVPY/Olympiad/SAT Score card (as applicable)</li>
+                            <li> JEE (Main)/NTSE/KVPY/Olympiad/SAT Score card (as applicable)</li>
                             <li> Visa/PIO/Passport etc. (Original returned back) - For DASA Students</li>
                             <li> Residential address proof</li>
                             <li> Four stamp size photographs</li>
@@ -875,7 +875,7 @@ function Kit() {
                                 <strong> Frequency:</strong> Every 30-45 minutes</p>
                               <p><strong> From Indira Nagar to IIIT-H:</strong><br />
                                 • Auto: ₹50-60/-<br />
-                                • You can also <strong>Bus no. 216</strong> from there for IIIT-H</p>
+                                • You can also take <strong>Bus no. 216</strong> from there for IIIT-H</p>
                             </div>
 
                             <div className="subsection">
@@ -951,23 +951,7 @@ function Kit() {
                             <p><em> App-based services are safer and have fixed rates</em></p>
                           </div>
 
-                          <div className="subsection">
-                            <h4> Traditional Cab Services</h4>
-                            <ul className="item-list">
-                              <li><strong>AC Cab:</strong> ₹15/- per km</li>
-                              <li><strong>Non AC Cab:</strong> ₹12/- per km</li>
-                            </ul>
-                          </div>
-
-                          <div className="subsection">
-                            <h4> Cab Package Providers</h4>
-                            <ul className="item-list">
-                              <li><strong>Dot Cabs:</strong> 040-24242424 | <a href="http://www.dotcabs.com" target="_blank">www.dotcabs.com</a></li>
-                              <li><strong>Easy Cabs:</strong> 040-43434343 | <a href="http://www.easycabs.com" target="_blank">www.easycabs.com</a></li>
-                              <li><strong>Orange Cabs:</strong> 040-44454647 | <a href="http://www.orangecabs.com" target="_blank">www.orangecabs.com</a></li>
-                            </ul>
-                            <p><em> Call ahead for booking and confirm rates</em></p>
-                          </div>
+                          
                         </div>
 
                         <div className="section">
@@ -1281,7 +1265,7 @@ function Kit() {
                             <p>IIIT-H is known for its <strong>groundbreaking research</strong>, with a strong emphasis on research-oriented knowledge building. The research-oriented approach helps solve real-life problems and allows students to work on cutting-edge technology.</p>
 
                             <div className="subsection">
-                              <h4>💼 Director's Vision</h4>
+                              <h4> Director's Vision</h4>
                               <p><em>As the director P.J. Narayan likes to say:</em></p>
                               <p style={{ fontStyle: 'italic', fontSize: '1.1rem', color: '#10b981', textAlign: 'center', margin: '1rem 0', padding: '1rem', border: '2px solid #10b981', borderRadius: '8px' }}>
                                 "IIIT-H prepares not for your first job, but for your last job."
@@ -1289,19 +1273,19 @@ function Kit() {
                             </div>
 
                             <div className="subsection">
-                              <h4>🌟 Unique Programs</h4>
+                              <h4> Unique Programs</h4>
                               <p>The institute's unique <strong>Human Values program</strong> at the undergraduate level has gained attention at national and international levels. The perfect blend of core, science and humanities courses creates a highly balanced program.</p>
                             </div>
                           </div>
                         </div>
 
                         <div className="section">
-                          <h3 className="section-title">📚 Academics</h3>
+                          <h3 className="section-title"> Academics</h3>
                           <div className="subsection">
                             <p>IIIT-H has made a mark in various spheres through groundbreaking research and alumni achievements, all because of its <strong>high academic standards</strong>. The college provides an excellent and balanced academic environment while expecting responsible behavior from students.</p>
 
                             <div className="subsection">
-                              <h4>👨‍🏫 Teaching Assistant System</h4>
+                              <h4> Teaching Assistant System</h4>
                               <p>The Undergraduate TA system includes students who assist lecturers by taking charge of Labs and Tutorials. This system helps students:</p>
                               <ul className="item-list">
                                 <li>Interact better with peers and faculty</li>
@@ -1312,7 +1296,7 @@ function Kit() {
                             </div>
 
                             <div className="subsection">
-                              <h4>🔄 Academic Flexibility</h4>
+                              <h4> Academic Flexibility</h4>
                               <p>The academic model allows greater freedom in course selection:</p>
                               <ul className="item-list">
                                 <li><strong>Electives from 5th semester onward</strong> - Choose your specialization path</li>
@@ -1323,7 +1307,7 @@ function Kit() {
                                 <li><strong>Student Information System</strong> – All your academic, attendance, and sports-related information is available on the IMS portal <a href="https://ims.iiit.ac.in/" target="_blank" ><strong> (ims.iiit.ac.in)</strong></a>.</li>
 
                               </ul>
-                              <p><em>💡 This flexibility helps widen your horizons across various disciplines</em></p>
+                              <p><em> This flexibility helps widen your horizons across various disciplines</em></p>
                             </div>
                           </div>
                         </div>
@@ -1334,7 +1318,7 @@ function Kit() {
                             <p><strong>Felicity</strong> is the annual techno-cultural fest - a three-day spectacle involving exciting activities, competitions, talks, workshops, and stunning performances by bands from across the country. It begins with Inaugurals performed by our own students.</p>
 
                             <div className="subsection">
-                              <h4>🎪 Event Teams & Activities</h4>
+                              <h4> Event Teams & Activities</h4>
                               <ul className="item-list">
                                 <li><strong> Robotics team for Pulsation</strong> - Build and battle robots</li>
                                 <li><strong> Artists for Kalakshetra</strong> - Dance, drama, music performances</li>
@@ -1358,7 +1342,7 @@ function Kit() {
                             <p>We have <strong>5 hostels</strong> with excellent facilities:</p>
 
                             <div className="subsection">
-                              <h4>👦 Boys' Hostels</h4>
+                              <h4> Boys' Hostels</h4>
                               <ul className="item-list">
                                 <li><strong>Palash Nivas (OBH)</strong> - Old Boys Hostel</li>
                                 <li><strong>Kadamba Nivas (NBH)</strong> - New Boys Hostel</li>
@@ -1367,7 +1351,7 @@ function Kit() {
                             </div>
 
                             <div className="subsection">
-                              <h4>👧 Girls' Hostels</h4>
+                              <h4> Girls' Hostels</h4>
                               <ul className="item-list">
                                 <li><strong>Parijat Nivas (GH)</strong> - Girls Hostel</li>
                                 
@@ -1467,7 +1451,7 @@ function Kit() {
                           
 
                           <div className="subsection">
-                            <h4>🏠 House System</h4>
+                            <h4> House System</h4>
                             <p><strong>4 houses</strong> compete year-round in cultural and sports activities:</p>
                             <ul className="item-list">
                               <li><strong> Aakash</strong> (Sky) - Blue house</li>
@@ -1479,7 +1463,7 @@ function Kit() {
                           </div>
 
                           <div className="subsection">
-                            <h4>⚽ Sports</h4>
+                            <h4> Sports</h4>
                             <p>Year-round sports activities include:</p>
 
                             <div className="subsection">
@@ -1513,7 +1497,7 @@ function Kit() {
                             <p>Hyderabad's climate is <strong>pleasant for most of the year</strong>, making it perfect for year-round activities:</p>
 
                             <div className="subsection">
-                              <h4>❄️ Winter (December - February)</h4>
+                              <h4> Winter (December - February)</h4>
                               <ul className="item-list">
                                 <li><strong> Temperature:</strong> Cool weather, rarely below 10°C</li>
                                 <li><strong> Perfect for:</strong> Outdoor activities, sports, and exploration</li>
@@ -1522,7 +1506,7 @@ function Kit() {
                             </div>
 
                             <div className="subsection">
-                              <h4>☀️ Summer (March - June)</h4>
+                              <h4> Summer (March - June)</h4>
                               <ul className="item-list">
                                 <li><strong> Temperature:</strong> Can reach 35-38°C</li>
                                 <li><strong> Good news:</strong> Summer vacations begin just as weather gets unbearable</li>
@@ -1531,7 +1515,7 @@ function Kit() {
                             </div>
 
                             <div className="subsection">
-                              <h4>🌧️ Monsoon (July - September)</h4>
+                              <h4> Monsoon (July - September)</h4>
                               <ul className="item-list">
                                 <li><strong> Pleasant rains</strong> bring relief from summer heat</li>
                                 <li><strong> Campus becomes lush green</strong> and beautiful</li>
