@@ -6,7 +6,8 @@ import {
   Calendar,
   FlaskConical,
   Building,
-  Home
+  Home,
+  ExternalLink
 } from 'lucide-react';
 import './LifeAtIIITH.css';
 
@@ -26,10 +27,9 @@ const LifeAtIIITH = () => {
       description: 'World-class education with cutting-edge curriculum, distinguished faculty, and state-of-the-art facilities. Experience rigorous academic programs designed to foster innovation and critical thinking.',
       image: acadsImg,
       icon: <GraduationCap size={24} />
-    },
-    clubs: {
+    },    clubs: {
       title: 'Clubs',
-      description: 'Vibrant student clubs spanning technology, arts, sports, and cultural activities. Join passionate communities and develop skills beyond the classroom while building lifelong friendships.',
+      description:'Vibrant student clubs spanning technology, arts, sports, and cultural activities. Join passionate communities and develop skills beyond the classroom while building lifelong friendships.',
       image: clubsImg,
       icon: <Users size={24} />
     },
@@ -136,8 +136,21 @@ const LifeAtIIITH = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -30 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                >
-                  <h3 className="content-title">{sections[activeSection].title}</h3>
+                >                  <h3 className="content-title">
+                    {activeSection === 'clubs' ? (
+                      <a href="https://clubs.iiit.ac.in" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                        Clubs <ExternalLink size={16} style={{ display: 'inline', marginLeft: '4px', verticalAlign: 'middle' }} />
+                      </a>
+                    ) : activeSection === 'fest' ? (
+                      <a href="https://felicity.iiit.ac.in" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                        Fest <ExternalLink size={16} style={{ display: 'inline', marginLeft: '4px', verticalAlign: 'middle' }} />
+                      </a>
+                    ) : activeSection === 'academics' ? (
+                      <a href="https://www.iiit.ac.in/#" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                        Academics <ExternalLink size={16} style={{ display: 'inline', marginLeft: '4px', verticalAlign: 'middle' }} />
+                      </a>
+                    ) : sections[activeSection].title}
+                  </h3>
                   <p className="content-description">{sections[activeSection].description}</p>
                 </motion.div>
               </AnimatePresence>

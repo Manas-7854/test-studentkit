@@ -1374,16 +1374,30 @@ function Kit() {
                             
                           </div>
 
-                          <div className="subsection">
-                            <h4> Campus</h4>
-                            <p>Spread over <strong>66 acres</strong> with four buildings housing schools and research centers:</p>
-                            <ul className="item-list">
+                          <div className="subsection">                            <h4> Campus</h4>
+                            <p>Spread over <strong>66 acres</strong> with four buildings housing schools and research centers:</p>                            <ul className="item-list">
                               <li><strong> Buildings named after mountain ranges:</strong> Nilgiri, Vindhya, and Himalaya</li>
                               <li><strong> Clean, green, and pollution-free environment</strong></li>
                               <li><strong> Tree-lined roads</strong> providing natural shade and beauty</li>
                               <li><strong> State-of-the-art research centers</strong></li>
                               <li><strong> Modern library and study spaces</strong></li>
                             </ul>
+                            <p style={{ marginTop: '1rem', display: 'inline-block', padding: '0.5rem 1rem', background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>
+                              <a href="https://www.iiit.ac.in/gallery/" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                style={{ 
+                                  color: 'white',
+                                  textDecoration: 'none', 
+                                  display: 'flex', 
+                                  alignItems: 'center', 
+                                  gap: '8px',
+                                  fontSize: '1.1rem'
+                                }}>
+                                📸 Explore our Campus Photo Gallery
+                                <ExternalLink size={18} style={{ display: 'inline' }} />
+                              </a>
+                            </p>
                           </div>
                         </div>
 
