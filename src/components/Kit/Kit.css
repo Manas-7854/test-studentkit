@@ -926,8 +926,17 @@ h4 {
 }
 
 @media (max-width: 480px) {
+
+  .main-content{
+    max-width: 70%;
+  }
   .modal-overlay {
     padding: 1rem;
+  }
+
+  .category-card
+  {
+    max-width: 85%;
   }
 
   .modal-content {
