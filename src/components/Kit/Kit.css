@@ -310,26 +310,24 @@
   }
 }
 
-/* Mobile styles - always show both title and description */
+/* Mobile styles - hide description and adjust title */
 @media (max-width: 968px) {
   .category-content {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
     padding: 1rem;
   }
   
   .category-title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    margin-top: auto;
   }
   
   .category-description {
-    opacity: 1;
-    visibility: visible;
-    position: relative;
-    transform: none;
-    margin-top: auto;
+    display: none;
   }
 
   .category-card {
@@ -936,7 +934,7 @@ h4 {
 
   .category-card
   {
-    max-width: 85%;
+    max-width: 80%;
   }
 
   .modal-content {
@@ -1037,4 +1035,7 @@ h4 {
     -ms-user-select: none;
     user-select: none;
   } */
+   .footer-msg{
+    color: #ffffff;
+   }
 }
