@@ -4,7 +4,7 @@ import './Landing.css'
 
 // Import images
 import logo from '../../assets/logo.png'
-import backgroundImage from '../../assets/background2.jpeg'
+import backgroundImage from '../../assets/background-3.jpg'
 
 const Landing = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0)

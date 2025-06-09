@@ -301,7 +301,7 @@ function Kit() {
                         <p>• A checklist of documents and essentials to bring for physical registration</p>
                         <p>• Guidelines on how to reach IIIT-H</p>
                         <p>• Procedures and schedule of orientation activities for the first two days</p>
-                        <p>• A list of hotels nearby for parents’ accommodation during this period</p>
+                        <p>• A list of hotels nearby for parents' accommodation during this period</p>
 
                         </ul>
 
@@ -1661,22 +1661,15 @@ function Kit() {
                   </motion.button>
               </motion.div>
 
-      {/* Footer */}
-      <motion.footer
-        className="footer"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.5 }}
-      >
-        <div className="footer-content">
-          <div className="footer-code">
-            {/* <Code size={16} /> */}
-            <span> {'<'} Made with ❤️ for IIIT-H Freshers 2025 {'>'}</span>
-          </div>
-          <div className="footer-tech">
-          </div>
+
+
+        
+        <div className='footer-msg'>
+          <p>
+
+          {'<'} Made with ❤️ for IIIT-H Freshers 2025 {'>'}
+          </p>
         </div>
-      </motion.footer>
     </div>
   )
 }

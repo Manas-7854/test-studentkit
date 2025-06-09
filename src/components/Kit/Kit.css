@@ -89,6 +89,10 @@
   margin: 0 auto;
 }
 
+.tech-hint{
+  display: none;
+}
+
 .categories-grid {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -111,14 +115,61 @@
   padding: 1.5rem;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
-  background: rgba(57, 92, 54, 0.108);
-  
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-blend-mode: overlay;
+  background-color: rgba(149, 156, 152, 0.6); /* Increased opacity for more translucent images */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1px);
 }
 
+/* Different background images for each category */
+.category-card:nth-child(1) .category-gradient {
+  background-image: url('../../assets/background.jpeg');
+}
+
+.category-card:nth-child(2) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/campusandhostels.png');
+}
+
+.category-card:nth-child(3) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/clubs.png');
+}
+
+.category-card:nth-child(4) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/krb-audi.jpg');
+}
+
+.category-card:nth-child(5) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/acads.png');
+}
+
+.category-card:nth-child(6) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/fest.png');
+}
+
+.category-card:nth-child(7) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/fest.png');
+}
+.category-card:nth-child(8) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/fest.png');
+}
+.category-card:nth-child(9) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/fest.png');
+}
+
+.category-card:nth-child(10) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/fest.png');
+}.category-card:nth-child(11) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/fest.png');
+}.category-card:nth-child(12) .category-gradient {
+  background-image: url('../../assets/lifeAtIIITH/fest.png');
+}
+
+/* Dark overlay for better text visibility */
 .category-gradient::before {
   content: '';
   position: absolute;
@@ -126,14 +177,18 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: inherit;
-  opacity: 0.95;
-  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.4)
+  );
+  z-index: 1;
+  transition: all 0.3s ease;
 }
 
 .category-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -143,49 +198,56 @@
   padding: 1rem;
 }
 
-.category-icon {
-  margin-bottom: 1rem;
-  opacity: 0.9;
-  color: #ffffff;
-}
-
 .category-title {
-  font-size: 1.15rem; /* Reduced from 4.6rem */
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-top: 50%;
-  margin-bottom: 0.5rem; /* Reduced to make room for tech-hint */
+  margin: 0;
   line-height: 1.3;
   color: #ffffff;
   text-shadow: 0 4px 6px rgba(0, 0, 0, 1);
-}
-
-.tech-hint {
-  color: #f8fafc;
-  position: relative; /* Changed from absolute to relative */
-  font-size: 0.3rem; /* Much smaller size */
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  border: 1px solid rgba(248, 250, 252, 0.6);
-  border-radius: 4px; /* Smaller border radius */
-  padding: 0.15rem 0.25rem; /* Smaller padding */
-  margin: 0.3rem auto 0.5rem auto; /* Center it and add margins */
-  display: inline-block;
-  backdrop-filter: blur(3px);
-  background: rgba(0, 0, 0, 0.2);
-  white-space: nowrap;
-  opacity: 0.8;
-  text-align: center;
-  max-width: 80%; /* Ensure it doesn't overflow the card */
-  overflow: hidden;
-  text-overflow: ellipsis;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .category-description {
-  font-size: 0.7rem; /* Reduced from 2.8rem */
-  opacity: 0.95;
+  font-size: 0.7rem;
+  opacity: 0;
+  visibility: hidden;
   line-height: 1.4;
   color: #f0f9ff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  margin-bottom: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 20px));
+  transition: all 0.3s ease, visibility 0.3s ease;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.category-card:hover .category-description {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
+
+.category-card:hover .category-title {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, calc(-50% - 20px));
+}
+
+.category-card:hover .category-gradient::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+  );
 }
 
 .category-arrow {
@@ -199,7 +261,7 @@
 }
 
 .category-card:hover .category-gradient {
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
@@ -231,23 +293,7 @@
   text-align: left;
 }
 
-.tech-hint {
-  color: #f8fafc;
-  position: absolute;
-  margin-right: 0;
-  margin-top: 0;
-  margin-left: auto;
-  margin-bottom: 12em;
-  font-size: 0.5em; /* Reduced from 2em */
-  top: 0;
-  right: 0;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  border: 1px solid #f8fafc;
-  border-radius: 14px;
-  /* top: 0.75rem; */
-  /* right: 0.75rem; */
-  padding: 0.25rem 0.5rem;
-}
+
 
 /* Enhanced Modal with Modern Design */
 .modal-overlay {
@@ -449,7 +495,8 @@
   padding: 0.5rem 0;
   padding-left: 1.5rem;
   position: relative;
-  list-style: none;
+  /* list-style:   marker: ; */
+  list-style-type:circle;
 }
 
 h4 {
@@ -556,6 +603,13 @@ h4 {
 .explore-button:hover .button-arrow {
   transform: translateX(4px);
   opacity: 1; /* Full opacity on hover */
+}
+
+.footer-msg p{
+  margin: auto;
+  padding: auto;
+  position: absolute;
+  color: white;
 }
 
 /* Responsive Design */
@@ -794,16 +848,41 @@ h4 {
     font-size: 0.6rem; /* Increased from 0.325rem */
   }
   
+  .categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .header {
+    margin-bottom: 3rem;
+  }
+  
   .category-title {
-    font-size: 1rem; /* Increased from 0.675rem */
+    font-size: 1rem; /* Increased from 0.8rem */
   }
   
   .category-description {
     font-size: 0.8rem; /* Increased from 0.5rem */
   }
   
+  .modal-overlay {
+    padding: 1.5rem;
+    touch-action: none; /* Prevent background scrolling when modal is open */
+  }
+  
+  .modal-content {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 20px;
+    touch-action: auto; /* Allow normal touch interaction within modal */
+  }
+  
+  .modal-header {
+    padding: 2rem 2.5rem 1.5rem;
+  }
+  
   .modal-header h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   .modal-body {
@@ -848,6 +927,8 @@ h4 {
 
   .modal-content {
     max-width: 95vw;
+    /* padding: 0rem; */
+    /* margin: 0; */
   }
 
   .modal-header {
@@ -871,6 +952,13 @@ h4 {
     font-size: 0.9rem;
     padding: 0.4rem 0;
     padding-left: 0.6rem;
+  }
+
+  .section{
+    /* padding: 0.2em; */
+  }
+  .subsection{
+    padding: 0.5em;
   }
   
   .subsection h4 {
@@ -928,51 +1016,10 @@ h4 {
   }
   
   
-  .category-title, .category-description, .tech-hint {
+  /* .category-title, .category-description, .tech-hint {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-}
-
-/* Responsive adjustments for tech hint */
-@media (max-width: 1200px) {
-  .tech-hint {
-    font-size: 0.4rem; /* Slightly increased from 0.28rem */
-    padding: 0.12rem 0.2rem;
-    margin: 0.25rem auto 0.4rem auto;
-  }
-}
-
-@media (max-width: 968px) {
-  .tech-hint {
-    font-size: 0.4rem; /* Slightly increased from 0.25rem */
-    padding: 0.1rem 0.18rem;
-    margin: 0.2rem auto 0.35rem auto;
-    border-radius: 3px;
-    touch-action: none; /* Prevent interaction with tech hints */
-    pointer-events: none; /* Make tech hints non-interactive on touch */
-  }
-}
-
-@media (max-width: 768px) {
-  .tech-hint {
-    font-size: 0.35rem; /* Slightly increased from 0.22rem */
-    padding: 0.08rem 0.15rem;
-    margin: 0.15rem auto 0.3rem auto;
-    border-radius: 2px;
-    touch-action: none;
-    pointer-events: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .tech-hint {
-    font-size: 0.29rem; /* Slightly increased from 0.2rem */
-    padding: 0.06rem 0.12rem;
-    margin: 0.1rem auto 0.25rem auto;
-    touch-action: none;
-    pointer-events: none;
-  }
+  } */
 }

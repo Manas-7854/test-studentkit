@@ -16,8 +16,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: -2;
 }
 
@@ -84,7 +84,7 @@
           drop-shadow(0 0 30px rgba(0, 0, 0, 0.2));
   animation: float 6s ease-in-out infinite;
   background: radial-gradient(ellipse at center, rgba(22, 21, 21, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
+  /* border-radius: 50%; */
   padding: 15px; /* Reduced from 20px */
   transition: all 0.3s ease;
 }
@@ -425,12 +425,15 @@
   }
   
   .main-logo {
-    width: 100px; /* Reduced from 120px */
+    width: 150px; /* Reduced from 120px */
     margin-bottom: 0.8rem; /* Reduced from 1rem */
   }
 
   .cycling-word-container {
     min-width: 80px; /* Reduced from 100px */
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .main-subtitle {
