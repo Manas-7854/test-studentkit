@@ -284,7 +284,7 @@ function Kit() {
                     </div>
                     <div className="documents-content">
                       <div className="section">
-                        <h3 className="section-title">🌟 Welcome from Student Affairs Committee</h3>
+                        <h3 className="section-title"> Welcome from Student Affairs Committee</h3>
                         <div className="subsection">
                         <p>Dear Freshers,</p>
 
