@@ -284,32 +284,25 @@ function Kit() {
                     </div>
                     <div className="documents-content">
                       <div className="section">
-                        <h3 className="section-title">🌟 Welcome from Student Life Committee</h3>
+                        <h3 className="section-title">🌟 Welcome from Student Affairs Committee</h3>
                         <div className="subsection">
                         <p>Dear Freshers,</p>
 
                         
 
-                        <p>Congratulations and a very warm welcome to the International Institute of Information Technology, Hyderabad (IIIT-H). You are about to begin an exciting new chapter in your life, filled with opportunities, challenges, and memorable experiences.</p>
+                        <p>Welcome to IIIT Hyderabad!</p>
 
-                        <p>At IIIT-H, we place equal importance on rigorous academics and holistic personal development. The Student Life Committee (SLC) is dedicated to enriching your student journey by overseeing all activities related to campus life, including clubs, events, and cultural programs.</p>
+                        <p>On behalf of the Student Affairs Committee, I am delighted to welcome you to our vibrant and intellectually enriching campus. You are now part of a community that values creativity and collaboration — and we are excited to have you join us.</p>
 
-                        <p>This student kit has been thoughtfully compiled to help you settle in with ease. It includes:</p>
-                        <ul>
-                        <p>• Welcome message from the Director</p>
-                        <p>• Message from the student mentor body with insights into student life at IIIT-H</p>
-                        <p>• A checklist of documents and essentials to bring for physical registration</p>
-                        <p>• Guidelines on how to reach IIIT-H</p>
-                        <p>• Procedures and schedule of orientation activities for the first two days</p>
-                        <p>• A list of hotels nearby for parents' accommodation during this period</p>
+                        <p>As Chair of the Student Affairs Committee, I oversee various sub-committees that looks into different aspects of student life beyond the classroom — from hostel life and dining (mess) to sports, cultural activities, clubs, health and wellness, and overall campus life. Along with a dedicated team of faculty and student volunteers, we are here to ensure your time at IIITH is not only academically fulfilling but also personally enriching and enjoyable.</p>
+                        
 
-                        </ul>
+                        <p>We encourage you to explore the many opportunities available — join a club, try a new sport, participate in cultural fests, or contribute to campus initiatives. This is your home for the next few years, and we want you to feel supported, heard, and inspired every step of the way.</p>
 
-                        <p>We hope this information helps you and your family during your transition to campus life. Should you need any assistance, we are always here to support you.</p>
+                        <p>Our student community thrives on mutual respect, inclusivity, and shared responsibility. If you ever face challenges — academic, emotional, or personal — please know that there are support systems in place, and we are just an email or conversation away.</p>
 
-                        <p>Wishing you all the best as you begin your journey at IIIT-H!</p>
-
-                        <p>Tapan Kumar Sau<br />Chair, Student Life Committee<br />IIIT Hyderabad</p>
+                        <p>Wishing you the very best as you begin this exciting new chapter of your life.</p>
+                        <p>Warm regards,<br />Dr Radhika Mamidi<br />Chair, Student Affairs Committee<br />IIIT Hyderabad</p>
 
 
                         </div>
